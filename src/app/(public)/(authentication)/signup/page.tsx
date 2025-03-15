@@ -1,8 +1,6 @@
 import dynamic from 'next/dynamic'
 
-const FormComponent = dynamic(() => import('@/features/authentication/components/Form'), {
-  ssr: false,
-})
+import FormComponent from '@/features/authentication/components/Form';
 
 const Page = () => {
 

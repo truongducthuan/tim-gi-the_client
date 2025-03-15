@@ -3,11 +3,14 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation";
 
+import { InputText } from 'primereact/inputtext';
+        
+
 interface Prop {
   isLogin?: boolean
 }
 
-const Form = ({ isLogin }: Prop) => {
+const FormComponent = ({ isLogin }: Prop) => {
   const router = useRouter()
 
   const [email, setEmail] = useState<string>("");
@@ -149,4 +152,4 @@ const Form = ({ isLogin }: Prop) => {
   );
 };
 
-export default Form;
+export default FormComponent;
